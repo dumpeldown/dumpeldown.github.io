@@ -34,8 +34,8 @@
     --line-height-normal: 1.7;
     --line-height-small: 1.2;
 
-    --black: #000;
-    --pink: #ff3258;
+    --background_color: #1E2B34;
+    --accent_color: #ff6700;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
 
@@ -72,7 +72,7 @@ body {
     font-weight: 400;
     color: var(--white-1);
     line-height: var(--line-height-normal);
-    background: var(--black);
+    background: var(--background_color);
     overflow-x: hidden;
 }
 
@@ -150,7 +150,7 @@ h2::after {
     display: block;
     height: 2px;
     width: 10rem;
-    background: var(--pink);
+    background: var(--accent_color);
     margin: var(--gutter-small) 0;
 }
 
@@ -201,7 +201,7 @@ a {
 
 button:focus,
 a:focus {
-    outline: 2px solid var(--pink);
+    outline: 2px solid var(--accent_color);
 }
 
 body:not(.user-is-tabbing) button:focus,
@@ -210,7 +210,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .link:hover {
-    color: var(--pink);
+    color: var(--accent_color);
 }
 
 .btn {
@@ -219,7 +219,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: 1rem 4.2rem;
     text-decoration: none;
     color: inherit;
-    border: 1px solid  var(--pink);
+    border: 1px solid  var(--accent_color);
     font-weight: 400;
 }
 
@@ -243,20 +243,20 @@ body:not(.user-is-tabbing) a:focus {
 .btn:hover::after,
 .btn:focus::after {
     right: 0;
-    background: var(--pink);
+    background: var(--accent_color);
 }
 
-.btn--pink {
-    background: var(--pink);
+.btn--accent_color {
+    background: var(--accent_color);
     transition: all 0.2s;
 }
 
-.btn--pink::after {
+.btn--accent_color::after {
     display: none;
 }
 
-.btn--pink:hover,
-.btn--pink:focus {
+.btn--accent_color:hover,
+.btn--accent_color:focus {
     background: transparent;
 }
 
@@ -266,7 +266,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: .6rem;
     color: inherit;
     text-decoration: none;
-    border-bottom: 1px solid var(--pink);
+    border-bottom: 1px solid var(--accent_color);
 }
 
 .link__text::after {
@@ -289,7 +289,7 @@ body:not(.user-is-tabbing) a:focus {
 .link__text:hover::after,
 .link__text:focus:after {
     right: 0;
-    background: var(--pink);
+    background: var(--accent_color);
 }
 
 .link__text span {
@@ -308,7 +308,7 @@ body:not(.user-is-tabbing) a:focus {
     align-items: center;
     height: 5.5rem;
     width: 5.5rem;
-    background-color: var(--pink);
+    background-color: var(--accent_color);
     border-radius: 50%;
     z-index: 10;
     visibility: hidden;
@@ -390,13 +390,13 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .nav__link:hover {
-    color: var(--pink);
+    color: var(--accent_color);
 }
 
 .nav__link:hover::after {
     right: 0;
     height: 2px;
-    background: var(--pink);
+    background: var(--accent_color);
 }
 
 /* --------------------------------------- */
@@ -582,7 +582,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .footer__social-links {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     padding: var(--gutter-normal) 0;
     list-style: none;
 }
