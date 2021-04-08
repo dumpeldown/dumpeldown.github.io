@@ -76,6 +76,10 @@ body {
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+}
+
 .row {
     max-width: var(--container-max-width);
     margin: 0 auto;
