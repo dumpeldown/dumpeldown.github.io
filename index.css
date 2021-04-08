@@ -225,6 +225,7 @@ body:not(.user-is-tabbing) a:focus {
     color: inherit;
     border: 1px solid  var(--accent_color);
     font-weight: 400;
+    border-radius: 4px;
 }
 
 .btn:focus {
@@ -253,6 +254,10 @@ body:not(.user-is-tabbing) a:focus {
 .btn--accent_color {
     background: var(--accent_color);
     transition: all 0.2s;
+}
+.btn--small{
+    font-size: 1.9rem;
+    padding: 0.3rem 2rem;
 }
 
 .btn--accent_color::after {
@@ -489,7 +494,12 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__code:hover {
-    transform: scale(1.2);
+    transform: scale(1.5);
+}
+
+.social_link{
+    padding-top: 20px;
+    display: inline;
 }
 
 .work__image-box {
@@ -597,6 +607,12 @@ body:not(.user-is-tabbing) a:focus {
 
 .footer__social-image {
     height: 4rem;
+    padding-inline: 10px;
+    transition: transform .2s;
+}
+
+.footer__social-image:hover{
+    transform: scale(1.5);
 }
 
 .footer__github-buttons {
