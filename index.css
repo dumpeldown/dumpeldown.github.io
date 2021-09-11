@@ -631,3 +631,13 @@ body:not(.user-is-tabbing) a:focus {
         padding: var(--gutter-medium) 0;
     } 
 }
+
+.side_by_side{
+    display: inline_block;
+}
+
+.checklight_class{
+    margin-left: auto;
+    margin-right: auto;
+
+}
