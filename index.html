@@ -14,239 +14,303 @@
 <html lang="en">
 
 <head>
-    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico"/>
-    <meta name="google-site-verification" content="ftHFt6OewaPWr0mDrHohYw-F2BUuG19jFpPCxQ5zVXA"/>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+    <meta name="google-site-verification" content="ftHFt6OewaPWr0mDrHohYw-F2BUuG19jFpPCxQ5zVXA" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:title" content="Jurek Jesse | Now this is interesting!"/>
+    <meta property="og:description" content="Agile-minded cloud engineer creating impactful software solutions."/>
+    <meta property="og:image" content="./images/nice_photo_of_myself.jpg"/>
+    <meta property="og:url" content="https://jurekjesse.com"/>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet"
-          type="text/css">
-    <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+        type="text/css">
+    <script defer type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
 
     <!-- Put your site title here -->
     <title>
         Jurek Jesse | Now this is interesting!
     </title>
 
-    <meta name="description"
-          content="Jurek Jesse is a Computer Science student based in Cologne, Germany.">
+    <meta name="description" content="Jurek Jesse is a Computer Science student based in Wiesbaden, Germany.">
     <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-    <meta name="keywords" content="Jurek Jesse, Open Source, Java, TH Koeln, Github"/>
-    <link rel="stylesheet" href="index.css"/>
+    <meta name="keywords" content="Jurek Jesse, Open Source, Java, TH Koeln, Github" />
+    <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
 
-<!-- ***** Header ***** -->
+    <!-- ***** Header ***** -->
 
-<header class="header" role="banner" id="top">
-    <div class="row">
-        <nav class="nav" role="navigation">
-            <ul class="nav__items">
-                <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-                <li class="nav__item">
-                    <a href="#about" class="nav__link">About</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#contact" class="nav__link">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <div class="header__text-box row">
-        <div class="header__text">
-            <h1 class="heading-primary">
-                <!-- Replace the following name with your name -->
-                <span>Jurek Jesse</span>
-            </h1>
-            <!-- Put a small paragraph about yourself -->
-            <p>Passionate student and convergent thinker.</p>
-            <a href="#contact" class="btn btn--accent_color">Get in touch</a>
-        </div>
-    </div>
-</header>
-
-<main role="main">
-
-    <!-- ***** About ***** -->
-
-    <section class="about" id="about">
+    <header class="header" role="banner" id="top">
         <div class="row">
-            <h2>About Me</h2>
-            <div class="about__content">
-                <div class="about__text">
-                    <!-- Replace the below paragraph with info about yourself -->
-                    <p>
-                        Hi, my name is Jurek!
-                        I am a computer science student at the University of Applied Sciences in Cologne, specialized in software systems.
-                        <br> I am planning to graduate in 2024! <br><br>
-                        I love to solve complex problems and to create maintainable & clean code.
-                        <br>
-                        <br>
-                        In my studies I especially enjoyed working with large codebases, as I can quickly get a detailed
-                        idea over any system.
-                        While building projects from the ground up, I got insides into modern software architectures and
-                        commonly used technologies.
-                    </p>
-                </div>
-
-                <div class="about__photo-container">
-                    <!-- Add a nice photo of yourself -->
-                    <img class="about__photo" src="./images/nice_photo_of_myself.jpg" alt=""/>
-                </div>
+            <nav class="nav" role="navigation">
+                <ul class="nav__items">
+                    <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__text-box row">
+            <div class="header__text">
+                <h1 class="heading-primary">
+                    <!-- Replace the following name with your name -->
+                    <span>Jurek Jesse</span>
+                </h1>
+                <!-- Put a small paragraph about yourself -->
+                <p>Agile-minded professional and convergent thinker.</p>
+                <a href="#about" class="btn btn--accent_color">More About Me</a>
             </div>
         </div>
-    </section>
-</main>
-<!-- ***** Work ***** -->
+    </header>
 
-<section class="work" id="work">
-    <div class="row">
-        <h2>Some of my previous projects</h2>
-        <div class="work__boxes">
+    <main role="main">
 
-            <!-- Each div with the work__box class is a project. -->
-            <div class="work__box">
-                <div class="work__text">
-                    <h3>Checklight</h3>
-                    <p>
-                        A lightweight application to check the status of your websites. <br>
-                        Focus on certificates and graphical presentation of the data. <br>
-                        The project was build start to finish, with the final delivery including a 54-page
-                        documentation.
-                        By order of the client, no external libraries where used, just pure:
-                    </p>
-                    <ul class="work__list">
-                        <li>Java</li>
-                        <li>JavaFX</li>
-                    </ul>
+        <!-- ***** About ***** -->
 
-                    <div class="work__links">
-                        <a class="btn btn--accent_color btn--small">Currently closed-source</a>
+        <section class="about" id="about">
+            <div class="row">
+                <h2>About Me</h2>
+                <div class="about__content">
+                    <div class="about__text">
+                        <!-- Replace the below paragraph with info about yourself -->
+                        <p>
+                            Hi, my name is Jurek! <br> <br>
+                            I hold a bachelor's degree in Computer Science and completed my thesis on the security in next-generation networks.
+                            <br>
+                            I currently work at Commerz Real AG as a working-student, focusing on building
+                            <b>cloud-based solutions</b> and delivering positive <b>change through automation</b>.
+                            <br>
+                            I thrive in <b>fast-changing environments</b>, leveraging my <b>agile mindset</b> and
+                            adaptability to guide projects from initial idea through design, implementation, to success.
+                        </p>
+                    </div>
+
+                    <div class="about__photo-container">
+                        <!-- Add a nice photo of yourself -->
+                        <img loading="lazy" class="about__photo" src="./images/nice_photo_of_myself.jpg" alt="" />
                     </div>
                 </div>
-                <div ID="checklight1" data-nanogallery2='{
+            </div>
+        </section>
+    </main>
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+        <div class="row">
+            <h2>Some of my previous projects</h2>
+            <div class="work__boxes">
+
+                <!-- Each div with the work__box class is a project. -->
+                <div class="work__box">
+                    <div class="work__text">
+                        <h3>My Bachelor Thesis</h3>
+                        <p>
+                            Implementation of a dashboard for penetration testing in a Digital Forensics and Incident
+                            Response (DFIR) environment for Open RAN.
+                        </p>
+                        <ul class="work__list">
+                            <li>Open RAN</li>
+                            <li>Go</li>
+                            <li>MongoDB</li>
+                            <li>Apexcharts.js</li>
+                            <li>MITRE</li>
+                        </ul>
+                        <div class="work__links">
+                            <a href="https://github.com/dumpeldown/foran-ba"
+                                class="btn btn--accent_color btn--small">Read my thesis</a>
+                        </div>
+                    </div>
+
+                    <div style="margin-left:3cm;" id="gallery" data-nanogallery2='{
+                    "itemsBaseURL": "images/",
+                    "thumbnailWidth":400,
+                    "thumbnailHeight":"auto",
+                    "thumbnailHoverEffect2": "scale120|scale120|labelSlideUp",
+                    "thumbnailAlignment":"justified"
+                }'>
+                        <a href="home.png" data-ngthumb="home.png" data-ngdesc="Start Page of the Dashboard">
+                            Start Page of the Dashboard
+                        </a>
+                        <a href="technik-vis-example.png" data-ngthumb="technik-vis-example.png"
+                            data-ngdesc="Techniques within the dashboard">
+                            Techniques within the dashboard
+                        </a>
+                    </div>
+
+
+                </div>
+
+                <div class="work__box">
+                    <div class="work__text">
+                        <h3>Minimal Twitch.tv Extension</h3>
+                        <p>
+                            A Firefox extension that allows users to watch and manage their favourites streamers. A
+                            custom fork.
+                        </p>
+                        <ul class="work__list">
+                            <li>JavaScript</li>
+                            <li>Firefox</li>
+                        </ul>
+                        <div class="work__links">
+                            <a hef="https://github.com/dumpeldown/NowStreaming-Firefox"
+                                class="btn btn--accent_color btn--small">Use or read more about</a>
+                        </div>
+                    </div>
+                    <div class="work__image-box">
+                        <img loading="lazy" src="./images/twitch.png" class="work__image"
+                            alt="Popout of the twitch extension" />
+                    </div>
+
+                </div>
+
+                <div class="work__box">
+                    <div class="work__text">
+                        <h3>Checklight</h3>
+                        <p>
+                            A lightweight application to check the status of your websites. <br>
+                            Focus on certificates and graphical presentation of the data. <br>
+                            The project was build start to finish, with the final delivery including a 54-page
+                            documentation.
+                            By order of the client, no external libraries where used, just pure:
+                        </p>
+                        <ul class="work__list">
+                            <li>Java</li>
+                            <li>JavaFX</li>
+                        </ul>
+
+                        <div class="work__links">
+                            <a class="btn btn--accent_color btn--small">Currently closed-source</a>
+                        </div>
+                    </div>
+                    <div ID="checklight1" data-nanogallery2='{
+                    "itemsBaseURL": "images/",
+                    "thumbnailWidth":300,
+                    "thumbnailHeight":"auto",
+                    "thumbnailHoverEffect2": "scale120|scale120|labelSlideUp",
+                    "thumbnailAlignment":"left"
+                }'>
+                        <a class="row" href="checklight_1.png" data-ngthumb="checklight_1.png" data-ngdesc="">Main
+                            Menu</a>
+                        <a class="row" href="checklight_2.png" data-ngthumb="checklight_2.png"
+                            data-ngdesc="">Results</a>
+
+
+                    </div>
+                    <div ID="checklight2" data-nanogallery2='{
                     "itemsBaseURL": "images/",
                     "thumbnailWidth":300,
                     "thumbnailHeight":"auto",
                      "thumbnailHoverEffect2": "scale120|scale120|labelSlideUp",
                     "thumbnailAlignment":"justified"
                 }'>
-                    <a class="row" href="checklight_1.png" data-ngthumb="checklight_1.png" data-ngdesc="">Main Menu</a>
-                    <a class="row" href="checklight_2.png" data-ngthumb="checklight_2.png" data-ngdesc="">Results</a>
+                        <a class="row" href="checklight_3.png" data-ngthumb="checklight_3.png" data-ngdesc="">Data</a>
+                        <a class="row" href="checklight_4.png" data-ngthumb="checklight_4.png"
+                            data-ngdesc="">Certificates</a>
+                    </div>
 
-
-                </div>
-                <div ID="checklight2" data-nanogallery2='{
-                    "itemsBaseURL": "images/",
-                    "thumbnailWidth":300,
-                    "thumbnailHeight":"auto",
-                     "thumbnailHoverEffect2": "scale120|scale120|labelSlideUp",
-                    "thumbnailAlignment":"justified"
-                }'>
-                    <a class="row" href="checklight_3.png" data-ngthumb="checklight_3.png" data-ngdesc="">Data</a>
-                    <a class="row" href="checklight_4.png" data-ngthumb="checklight_4.png"
-                       data-ngdesc="">Certificates</a>
-                </div>
-
-                <div ID="checklight3" data-nanogallery2='{
+                    <div ID="checklight3" data-nanogallery2='{
                     "itemsBaseURL": "images/",
                     "thumbnailWidth":300,
                     "thumbnailHeight":"auto",
                      "thumbnailHoverEffect2": "scale120|scale120|labelSlideUp",
                     "thumbnailAlignment":"justified"
                   }'>
-                    <a class="row" href="checklight_5.png" data-ngthumb="checklight_5.png"
-                       data-ngdesc="">Architecture</a>
-                </div>
-            </div>
-
-            <div class="work__box">
-                <div class="work__text">
-                    <h3>Blitzer in Essen</h3>
-                    <p>
-                        A map of mobile speed traps in the City of Essen, NRW. <br>
-                        Generated using OCR and
-                        forwards-geocoding.
-                    </p>
-                    <ul class="work__list">
-                        <li>Java</li>
-                        <li>tess4j</li>
-                        <li>JXMapViewer2</li>
-                    </ul>
-                    <div class="work__links">
-                        <a class="btn btn--accent_color btn--small">Currently closed-source</a>
+                        <a class="row" href="checklight_5.png" data-ngthumb="checklight_5.png"
+                            data-ngdesc="">Architecture</a>
                     </div>
                 </div>
-                <div class="work__image-box">
-                    <img src="./images/project-1.png" class="work__image" alt="Project 1"/>
+
+                <div class="work__box">
+                    <div class="work__text">
+                        <h3>Blitzer in Essen</h3>
+                        <p>
+                            A map of mobile speed traps in the City of Essen, NRW. <br>
+                            Generated using OCR and
+                            forwards-geocoding.
+                        </p>
+                        <ul class="work__list">
+                            <li>Java</li>
+                            <li>tess4j</li>
+                            <li>JXMapViewer2</li>
+                        </ul>
+                        <div class="work__links">
+                            <a class="btn btn--accent_color btn--small">Currently closed-source</a>
+                        </div>
+                    </div>
+                    <div class="work__image-box">
+                        <img loading="lazy" src="./images/blitzer-essen.png" class="work__image" alt="Blitzer Essen" />
+                    </div>
                 </div>
+
+
+
             </div>
-
-
-
         </div>
-    </div>
-</section>
+    </section>
 
 
-<!-- ***** Contact ***** -->
+    <!-- ***** Contact ***** -->
 
-<section class="contact" id="contact">
-    <div class="row">
-        <h2>Get in Touch</h2>
-        <div class="contact__info">
+    <section class="contact" id="contact">
+        <div class="row">
+            <h2>Get in Touch</h2>
+            <div class="contact__info">
+                <p>
+                    Are you looking for a results-driven and proactive professional to help accelerate your business
+                    growth? <br>
+                    Do you need an innovative thinker to create software solutions for a future-ready digital landscape?
+                    🚀 <br>
+                    Have a question, need advice, or simply want to say "Hi 👋"? <br>
+                    Whatever the case, I’d love to hear from you! 😊 <br>
+                    The fastest way to reach me is via email.
+                </p>
+                <a href="mailto:contact@jurekjesse.com" class="btn">contact@jurekjesse.com</a>
+            </div>
+            <div>
+                <ul style="list-style-type: none;display:flex;padding-top:20px;padding-left: 20px;">
+                    <li>
+                        <a href="https://www.linkedin.com/in/jurek-jesse/" title="Link to Linkedin Profile">
+                            <img loading="lazy" src="./images/linkedin.svg" class="footer__social-image" alt="Linkedin">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/dumpeldown/" title="Link to Github Profile">
+                            <img loading="lazy" src="./images/github.svg" class="footer__social-image" alt="Github">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** Footer ***** -->
+
+    <footer role="contentinfo" class="footer">
+        <div class="row">
+            <!-- Update the links to point to your accounts -->
+
+            <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
             <p>
-                Are you looking for a fast-performing and "just-do-it!"-minded person to
-                help push your business forward?<br>
-                Do you need a young and quick-thinking character to develop your software for the future of tomorrow? 🚀 <br>
-                or want to ask a question ❓
-                or just want to say "Hi 👋" <br>
-                In any case feel free to let me know. 😊<br>
-                The quickest way to reach out to me is via email.
+                &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>
+                <br> 🌈 Customized by Jurek Jesse. 🌈
+                <br> Made with 💚 in Cologne, Germany.
             </p>
-            <a href="mailto:contact@jurekjesse.com" class="btn">contact@jurekjesse.com</a>
         </div>
-        <div>
-            <ul style="list-style-type: none;display:flex;padding-top:20px;padding-left: 20px;">
-                <li>
-                    <a href="https://www.linkedin.com/in/jurek-jesse/" title="Link to Linkedin Profile">
-                        <img src="./images/linkedin.svg" class="footer__social-image" alt="Linkedin">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/dumpeldown/" title="Link to Github Profile">
-                        <img src="./images/github.svg" class="footer__social-image" alt="Github">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
+    </footer>
 
-<!-- ***** Footer ***** -->
-
-<footer role="contentinfo" class="footer">
-    <div class="row">
-        <!-- Update the links to point to your accounts -->
-
-        <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-        <p>
-            &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>
-            <br> 🌈 Customized by Jurek Jesse. 🌈
-            <br> Made with 💚 in Cologne, Germany.
-        </p>
-    </div>
-</footer>
-
-<a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-</a>
-<script src="./index.js"></script>
+    <a href="#top" class="back-to-top" title="Back to Top">
+        <img loading="lazy" src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
+    </a>
+    <script src="./index.js"></script>
 </body>
 
 </html>
