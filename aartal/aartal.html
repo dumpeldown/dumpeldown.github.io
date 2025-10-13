@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Walk the line</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/aartal/favicon.png" />
+
+
+    <!-- reuse main site styles -->
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="aartal.css" />
+
+    <!-- Leaflet for maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    
+
+</head>
+<body>
+
+    <!-- small header/navigation (matches main site style) -->
+    <header class="header" role="banner" id="top">
+        <div class="header__text-box row">
+            <div class="header__text">
+                <h1 class="heading-primary"><span>Walking the Aartal Railway</span></h1>
+                <p>Documenting the journey along the abandoned Aartal Railway, exploring its history and landscapes.</p>
+            </div>
+        </div>
+        <!-- decorative overlay in header (placed after header text so it sits on the right) -->
+        <div class="header-overlay" aria-hidden="true"></div>
+    </header>
+
+    <main role="main">
+
+        <section class="about" id="entries">
+            <div class="row">
+                <article class="entry" data-km="8.5">
+                    <h2>24. August 2025</h2>
+                    <h3>Wiesbaden HBF - Wiesbaden Klarenthal</h3>
+
+                    <div class="entry-gallery">
+                        <div class="photo-wrap">
+                            <img id="first-photo" loading="lazy" src="../images/aartal/start_of_the_line.jpg" data-coord="50.06407642010436, 8.246297528347608" alt="Start/End at Wiesbaden HBF" />
+                            <div id="first-photo-note" class="img-note">Click any photo to show its location on the map</div>
+                        </div>
+                        <img loading="lazy" src="../images/aartal/overgrown.jpg" data-coord="50.06160019460649, 8.248829715329583" alt="Overgrown section" />
+                        <img loading="lazy" src="../images/aartal/zweiter_ring.jpg" data-coord="50.05780523390304, 8.250334250063418" alt="Bridge at 2. Ring" />
+                        <img loading="lazy" src="../images/aartal/biebricher.jpg" data-coord="50.05460619433142, 8.243717073974466" alt="Tunnel at Biebricher Straße" />
+                        <img loading="lazy" src="../images/aartal/waldstraße.jpg" data-coord="50.060578594770334, 8.231993348067542" alt="Old Station Waldstraße" />
+                        <img loading="lazy" src="../images/aartal/gerade.jpg" data-coord="50.06219651277936, 8.227841328035703" alt="Between Bieberich and Dotzheim are very long straight parts of track" />
+                        <img loading="lazy" src="../images/aartal/schiersteiner.jpg" data-coord="50.065980004920775, 8.220923341593583" alt="Bridge at Schiersteiner Straße" />
+                        <img loading="lazy" src="../images/aartal/dotzheim.jpg" data-coord="50.07569635085342, 8.203131256318333" alt="Station Dotzheim" />
+                    </div>
+
+                    <div class="gpx-map" data-gpx="track1.gpx" style="margin-bottom:1rem;"></div>
+                    <div class="gpx-info" style="margin-top:.8rem;color:var(--white-1);font-size:1.5rem"></div>
+
+                    <p>
+                    </p>
+                </article>
+
+                <article class="entry" data-km="14.13">
+                    <h2>13. Oktober 2025</h2>
+                    <h3>Wiesbaden Klarenthal - Eiserne Hand</h3>
+
+                    <div class="entry-gallery">
+                        <img loading="lazy" src="../images/aartal/PXL_20251012_130616135.MP.jpg" data-coord="50.09250912688022, 8.190211105458754" alt="Bahnübergang Wenzel-Janksch-Straße" />
+                        <img loading="lazy" src="../images/aartal/PXL_20251012_132742332.MP.jpg" data-coord="50.096981, 8.170094" alt="Bahnübergang Chausseehaus" />
+                        <img loading="lazy" src="../images/aartal/PXL_20251012_140852937.MP.jpg" data-coord="50.110572, 8.174297" alt="Schöner Abschnitt" />
+                        <img loading="lazy" src="../images/aartal/PXL_20251012_142030326.MP.jpg" data-coord="50.1201689784988, 8.165715738389487" alt="Brücke im Wald" />
+                        <img loading="lazy" src="../images/aartal/PXL_20251012_142559521.MP.jpg" data-coord="50.122509384375434, 8.168917163286546" alt="Brücke B54" />
+                    </div>
+
+                    <div class="gpx-map" data-gpx="track2.gpx"></div>
+
+                    <div class="gpx-info" style="margin-top:.8rem;color:var(--white-1);font-size:1.5rem"></div>
+
+                    <p>
+                    </p>
+                </article>
+
+                <!-- More entries can go here... -->
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Animated km counter sidebar -->
+    <div id="km-counter-sidebar">
+        <span id="km-counter-value">0.0</span>
+        <span id="km-counter-label">km explored</span>
+    </div>
+
+    <!-- Scripts: Leaflet + togeojson for GPX parsing -->
+    <script src="./leaflet.js"></script>
+    <script src="./aartal.js"></script>
+
+</body>
+</html>

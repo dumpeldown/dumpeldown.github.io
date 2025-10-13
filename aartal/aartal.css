@@ -1,0 +1,114 @@
+/* Combined CSS for aartal page (moved from inline <style> in aartal.html and from aartal/index.css) */
+
+/* Header background from aartal/index.css */
+.header {
+    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
+        url('../images/aartal/header.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: var(--font-size-normal);
+}
+
+/* --- Page-specific styles previously in aartal.html --- */
+body { background: var(--background_color); }
+.gpx-map {
+    height: 420px;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.04);
+    margin-top: 1rem;
+}
+.entry-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem; }
+/* Default image appearance */
+.entry-gallery img { width: 100%; height: auto; display: block; border-radius: 6px; object-fit: cover; }
+/* Image size variants: small (default), medium (span 2), large (span 3) */
+.entry-gallery img.img-small { width: 100%; }
+.entry-gallery img.img-medium { grid-column: span 2; }
+.entry-gallery img.img-large { grid-column: span 3; }
+/* Limit spans on narrow screens so layout stays usable */
+@media (max-width: 900px) {
+    .entry-gallery img.img-medium, .entry-gallery img.img-large { grid-column: span 1; }
+}
+.entry { margin-bottom: 6rem; }
+.meta { color: var(--white-1); font-size: 1.6rem; margin-top: .5rem; }
+.gpx-controls { margin-top: .8rem; display:flex; gap: .8rem; align-items:center; flex-wrap:wrap; }
+input[type=file] { color: var(--white); }
+.header { background-attachment: scroll; }
+/* Sidebar for km counter */
+#km-counter-sidebar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: rgba(30,43,52,0.95);
+    color: var(--accent_color);
+    font-family: 'Jost', sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    padding: 2rem 2.5rem;
+    border-radius: 2rem 0 0 2rem;
+    box-shadow: -2px 0 12px rgba(0,0,0,0.12);
+    z-index: 100;
+    min-width: 120px;
+    text-align: center;
+    pointer-events: none;
+}
+#km-counter-label {
+    display: block;
+    font-size: 2rem;
+    color: var(--white-1);
+    margin-top: .5rem;
+    font-weight: 400;
+}
+@media(max-width: 900px) {
+    #km-counter-sidebar { font-size: 2.5rem; padding: 1rem 1.2rem; min-width: 80px; }
+    #km-counter-label { font-size: 1.2rem; }
+}
+@media(max-width: 600px) {
+    #km-counter-sidebar { display: none; }
+}
+/* small note for first image as overlay bubble */
+.photo-wrap { position: relative; display: inline-block; }
+.img-note {
+    /* make text center*/
+    text-align: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: var(--white-1);
+    font-size: 1.3rem;
+    background: rgba(0,0,0,0.6);
+    padding: .45rem .7rem;
+    border-radius: 999px;
+    pointer-events: none; /* allow clicking through to image */
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+.img-note::after {
+    content: '';
+    position: absolute;
+    right: 12px;
+    bottom: -6px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.6) transparent transparent transparent;
+    display: block;
+}
+/* Header overlay (decorative) */
+.header-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 40%; /* occupies right side of header */
+    background-image: url('../images/aartal/overlay.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+    opacity: 0.8; /* 80% transparent */
+    pointer-events: none; /* don't block clicks */
+    z-index: 2;
+}
+@media(max-width: 900px) {
+    .header-overlay { display: none; }
+}
